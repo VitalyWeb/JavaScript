@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Shop</title>
+</head>
+
+<body>
+  <div class="shop">
+    <div class="product">
+      <span class="product-name">Lenovo Yoga</span>
+      <span class="product-price">$3000</span>
+      <button onclick="addToBasket(1)"><i class="fas fa-shopping-cart"></i></button>
+    </div>
+    <div class="product">
+      <span class="product-name">Acer Aspire</span>
+      <span class="product-price">$1800</span>
+      <button onclick="addToBasket(2)"><i class="fas fa-shopping-cart"></i></button>
+    </div>
+    <div class="product">
+      <span class="product-name">Dell Vostro</span>
+      <span class="product-price">$3400</span>
+      <button onclick="addToBasket(3)"><i class="fas fa-shopping-cart"></i></button>
+    </div>
+    <div class="product">
+      <span class="product-name">HP Pavilion</span>
+      <span class="product-price">$2900</span>
+      <button onclick="addToBasket(4)"><i class="fas fa-shopping-cart"></i></button>
+    </div>
+    <div class="product">
+      <span class="product-name">Asus Zenbook</span>
+      <span class="product-price">$3100</span>
+      <button onclick="addToBasket(5)"><i class="fas fa-shopping-cart"></i></button>
+    </div>
+    <div class="product">
+      <span class="product-name">MSI Modern</span>
+      <span class="product-price">$3500</span>
+      <button onclick="addToBasket(6)"><i class="fas fa-shopping-cart"></i></button>
+    </div>
+    <div class="product">
+      <span class="product-name">Apple MacBook</span>
+      <span class="product-price">$4200</span>
+      <button onclick="addToBasket(7)"><i class="fas fa-shopping-cart"></i></button>
+    </div>
+    <div class="product">
+      <span class="product-name">Huawei MateBook</span>
+      <span class="product-price">$2700</span>
+      <button onclick="addToBasket(8)"><i class="fas fa-shopping-cart"></i></button>
+    </div>
+    <div class="product">
+      <span class="product-name">Samsung Galaxy Book</span>
+      <span class="product-price">$2600</span>
+      <button onclick="addToBasket(9)"><i class="fas fa-shopping-cart"></i></button>
+    </div>
+    <div class="product">
+      <span class="product-name">Razer Blade</span>
+      <span class="product-price">$4700</span>
+      <button onclick="addToBasket(10)"><i class="fas fa-shopping-cart"></i></button>
+    </div>
+    <div class="product">
+      <span class="product-name">Microsoft Surface</span>
+      <span class="product-price">$3900</span>
+      <button onclick="addToBasket(11)"><i class="fas fa-shopping-cart"></i></button>
+    </div>
+    <div class="product">
+      <span class="product-name">LG Gram</span>
+      <span class="product-price">$3300</span>
+      <button onclick="addToBasket(12)"><i class="fas fa-shopping-cart"></i></button>
+    </div>
+  </div>
+  <hr />
+
+  <div class="basket">
+    <h2>Cart</h2>
+    <ul id="basket-items"></ul>
+    <h3>Total price: <span id="total">0</span></h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
