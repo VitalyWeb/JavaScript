@@ -1,0 +1,59 @@
+:root {
+    --main-color: #8e44ad;
+    --bg-color: #fdf6ff;
+    --text-color: #333;
+    --transition-speed: 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+body {
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(145deg, #a678d0, #7e3dbf);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #7e3dbf, #a678d0);
+    transform: scale(1.05);
+}
+
+#spoiler {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.98);
+    transition: max-height 0.4s ease, opacity 0.3s ease, transform 0.3s ease;
+    background: #fff;
+    border: 2px dashed #8e44ad;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(142, 68, 173, 0.2);
+    padding: 0 1.5rem;
+    margin-top: 1rem;
+}
+
+#spoiler.open {
+    max-height: 300px;
+    opacity: 1;
+    transform: scale(1);
+    padding: 1rem 1.5rem;
+}
+
+#spoiler.closed {
+    pointer-events: none;
+}
