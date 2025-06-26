@@ -23,8 +23,8 @@ header {
 
 .header-container {
     display: flex;
-    justify-content: space-around; /* Заголовок слева, счетчик справа */
-    align-items: center; /* Вертикальное выравнивание */
+    justify-content: space-around;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -32,7 +32,7 @@ header {
     color: #a0a0ff;
     font-size: 1.5rem;
     font-weight: 600;
-    min-width: 70px; /* чтобы счетчик не сжимался слишком */
+    min-width: 70px;
     text-align: right;
 }
 
@@ -96,7 +96,6 @@ form button {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
