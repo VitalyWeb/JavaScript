@@ -124,7 +124,7 @@
         try {
             const response = await fetch("https://jsonplaceholder.typicode.com/todos?_limit=15");
             if (!response.ok) {
-                throw new Error("Failed to fetch todos");
+                throw new Error(`Failed to fetch todos. Status: ${response.status}`);
             }
             return await response.json();
         }
@@ -139,7 +139,7 @@
         try {
             const response = await fetch("https://jsonplaceholder.typicode.com/users?_limit=5");
             if (!response.ok) {
-                throw new Error("Failed to fetch users");
+                throw new Error(`Failed to fetch users. Status: ${response.status}`);
             }
             return await response.json();
         }
@@ -161,12 +161,13 @@
             });
 
             if (!response.ok) {
-                throw new Error("Failed to create todo");
+                throw new Error(`Failed to create todo. Status: ${response.status}`);
             }
 
             const newTodo = await response.json();
-            todos.push({ ...todo, id: newTodo.id });
-            printToDo(todo);
+            const fullTodo = { ...todo, id: newTodo.id };
+            todos.push(fullTodo);
+            printToDo(fullTodo);
         }
         catch (error) {
             console.error("createTodo error:", error);
@@ -185,7 +186,7 @@
             });
 
             if (!response.ok) {
-                throw new Error("Failed to update todo");
+                throw new Error(`Failed to update todo. Status: ${response.status}`);
             }
 
             const todo = todos.find(t => t.id == todoId);
@@ -214,7 +215,7 @@
                 removeTodo(todoId);
             }
             else {
-                throw new Error("Failed to delete todo");
+                throw new Error(`Failed to delete todo. Status: ${response.status}`);
             }
         }
         catch (error) {
