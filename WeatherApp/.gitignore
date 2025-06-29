@@ -1,0 +1,5 @@
+build/
+.cache/
+.vercel/
+node_modules/
+dist/
