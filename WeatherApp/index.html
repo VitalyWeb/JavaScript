@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+
 
     <link rel="stylesheet" href="src/style.css">
     <title>Weather App</title>
@@ -30,31 +32,31 @@
         <div class="weather-info" id="weatherInfo">
             <div class="weather-header">
                 <div class="weather-title">
-                    <h2 id="locationName">Москва, Россия</h2>
-                    <p id="weatherDescription">Облачно</p>
+                    <h2 id="locationName">-</h2>
+                    <p id="weatherDescription">-</p>
                 </div>
                 <div class="main-weather-icon cloudy" id="weatherMainIcon">
                     <i class="fa-solid fa-cloud"></i>
                 </div>
-                <div class="temperature" id="temperature">12°C</div>
+                <div class="temperature" id="temperature">0</div>
             </div>
 
             <div class="weather-details">
                 <div class="detail-item tooltip" data-tooltip="Влажность">
                     <i class="fa-solid fa-droplet"></i>
-                    <span id="humidity">65%</span>
+                    <span id="humidity">0</span>
                 </div>
                 <div class="detail-item tooltip" data-tooltip="Ветер">
                     <i class="fa-solid fa-wind"></i>
-                    <span id="wind">5 м/с</span>
+                    <span id="wind">0</span>
                 </div>
                 <div class="detail-item tooltip" data-tooltip="Давление">
                     <i class="fa-solid fa-gauge-high"></i>
-                    <span id="pressure">1012 hPa</span>
+                    <span id="pressure">0</span>
                 </div>
                 <div class="detail-item tooltip" data-tooltip="Видимость">
-                    <i class="fa-solid fa-eye"></i>
-                    <span id="visibility">10 км</span>
+                    <i class="fa-solid fa-sun"></i>
+                    <span id="uvIndex">0</span>
                 </div>
             </div>
         </div>

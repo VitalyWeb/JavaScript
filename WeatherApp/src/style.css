@@ -197,7 +197,53 @@ body {
     white-space: nowrap;
 }
 
-#weatherMainIcon img {
-    width: 64px;
-    height: 64px;
+#weatherMainIcon i {
+    font-size: 48px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input-user {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .btn {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .weather-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-weather-icon {
+        font-size: 48px;
+        margin-right: 0;
+    }
+
+    .temperature {
+        font-size: 36px;
+    }
+
+    .weather-details {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+        height: auto;
+    }
+
+    .detail-item i {
+        font-size: 28px;
+    }
 }
