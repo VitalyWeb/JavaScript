@@ -5,3 +5,5 @@ build/
 node_modules/
 dist/
 .vercel/
+.parcel-cache/
+.vercel
